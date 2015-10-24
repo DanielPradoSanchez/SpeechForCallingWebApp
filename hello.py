@@ -14,6 +14,6 @@ def hello():
 	theList = [str(x) for x in theContent]
     resp = twilio.twiml.Response()
     resp.say("Hello Monkey")
-    resp.say(theList[0])
+    #resp.say(theList[0])
  
     return str(resp)

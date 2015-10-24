@@ -12,7 +12,7 @@ def hello():
     #myTest = praw.Reddit('myTest1')
 	#theContent = myTest.get_front_page(limit = 2)
 	#theList = [str(x) for x in theContent]
-	#theList = ['hello']
+	theList = ['hello']
     resp = twilio.twiml.Response()
     resp.say("Hello Monkey")
     #resp.say(theList[0])

@@ -15,5 +15,6 @@ app = Flask(__name__)
 def hello():
     """Respond to incoming requests."""
     resp = twilio.twiml.Response()
-    resp.say('The Monkey')
+    resp.say('My name is ' + myName)
+    resp.say('The top content on Reddit right now is ' + topContentTitle)
     return str(resp)

@@ -5,7 +5,7 @@ import praw
 
 myTest = praw.Reddit('myTest1')
 theContent = myTest.get_front_page(limit = 2)
-theList = [str(x) for x in theContent]
+theList = [x.title for x in theContent]
 
 app = Flask(__name__)
 

@@ -3,11 +3,11 @@ from flask import Flask
 import twilio.twiml
 import praw
 
-name = 'Daniel Prado'
-myTest = praw.Reddit('myTest1')
-topContent = myTest.get_front_page(limit = 1)
-listOfTopContentTitles = [x.title for x in theContent]
-topContentTitle = listOfTopContentTitles[0]
+myName = 'Daniel Prado'
+#myTest = praw.Reddit('myTest1')
+#topContent = myTest.get_front_page(limit = 1)
+#listOfTopContentTitles = [x.title for x in theContent]
+#topContentTitle = listOfTopContentTitles[0]
 
 app = Flask(__name__)
 

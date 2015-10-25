@@ -4,10 +4,10 @@ import twilio.twiml
 import praw
 
 myName = 'Daniel Prado'
-#myTest = praw.Reddit('myTest1')
-#topContent = myTest.get_front_page(limit = 1)
-#listOfTopContentTitles = [x.title for x in theContent]
-#topContentTitle = listOfTopContentTitles[0]
+myTest = praw.Reddit('myTest1')
+topContent = myTest.get_front_page(limit = 1)
+listOfTopContentTitles = [x.title for x in theContent]
+topContentTitle = listOfTopContentTitles[0]
 
 app = Flask(__name__)
 

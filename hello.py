@@ -9,7 +9,7 @@ theList = [x.title for x in theContent]
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route("/", methods=['GET', 'POST'])
 def hello():
     """Respond to incoming requests."""
     resp = twilio.twiml.Response()

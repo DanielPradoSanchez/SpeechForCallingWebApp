@@ -11,5 +11,5 @@ def hello():
     resp = twilio.twiml.Response()
     #resp.say('My name is ' + myName)
     #resp.say('The top content on Reddit right now is ' + topContentTitle)
-    resp.say('What is up Sam the man')
+    resp.say('What is up Garret')
     return str(resp)

@@ -15,6 +15,7 @@ topContentTile = listOfContent[0]
 def hello():
     """Respond to incoming requests."""
     resp = twilio.twiml.Response()
-    resp.say('My name is ' + myName)
-    resp.say('The top content on Reddit right now is ' + topContentTitle)
+    #resp.say('My name is ' + myName)
+    #resp.say('The top content on Reddit right now is ' + topContentTitle)
+    resp.say('hello monkey')
     return str(resp)

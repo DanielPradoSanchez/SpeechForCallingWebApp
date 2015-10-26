@@ -19,7 +19,8 @@ myName = 'Daniel Prado'
 reddit = praw.Reddit('danielprado')
 theContent = reddit.get_front_page(limit = 1)
 listOfContent = [str(x.title) for x in theContent]
-topContentTitle = listOfContent[0]
+topContentTile = 'The title'
+#topContentTitle = listOfContent[0]
 
 @app.route("/", methods=['GET', 'POST'])
 def hello():

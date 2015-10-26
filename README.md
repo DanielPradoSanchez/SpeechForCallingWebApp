@@ -21,4 +21,4 @@ This is dictated by the web app at https://sheltered-temple-5934.herokuapp.com/.
 
 
 Git pulls:
-The pull request for the web app that dictates what the call will say is at: 
+The pull request for the web app that dictates what the call will say is at: https://github.com/DanielPradoSanchez/SpeechForCallingWebApp/pull/1

@@ -18,9 +18,9 @@ app = Flask(__name__)
 myName = 'Daniel Prado'
 reddit = praw.Reddit('danielprado')
 theContent = reddit.get_front_page(limit = 1)
-listOfContent = [str(x.title) for x in theContent]
-topContentTitle = 'The title'
+#listOfContent = [str(x.title) for x in theContent]
 #topContentTitle = listOfContent[0]
+topContentTitle = 'The title'
 
 @app.route("/", methods=['GET', 'POST'])
 def hello():

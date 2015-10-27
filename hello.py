@@ -21,6 +21,7 @@ reddit = praw.Reddit('danielprado')
 theContent = reddit.get_front_page(limit = 1)
 listOfContent = [unidecode(x.title) for x in theContent]
 topContentTitle = listOfContent[0]
+topContentTitle = "Testing: #hash that's = () ? ! - 11th"
 
 @app.route("/", methods=['GET', 'POST'])
 def hello():

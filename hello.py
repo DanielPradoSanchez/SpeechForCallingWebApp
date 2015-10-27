@@ -8,7 +8,7 @@
 
 import os
 from flask import Flask
-from unidecode
+from unidecode import unidecode
 import twilio.twiml
 import praw
 
@@ -19,7 +19,7 @@ app = Flask(__name__)
 myName = 'Daniel Prado'
 reddit = praw.Reddit('danielprado')
 theContent = reddit.get_front_page(limit = 1)
-listOfContent = [unidecode.unidecode(x.title) for x in theContent]
+listOfContent = [unidecode(x.title) for x in theContent]
 topContentTitle = listOfContent[0]
 
 @app.route("/", methods=['GET', 'POST'])
